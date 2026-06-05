@@ -10,6 +10,11 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+// Root welcome endpoint
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to the Our Universe API!" });
+});
+
 // API health endpoint
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok", message: "Backend server is running perfectly!" });
