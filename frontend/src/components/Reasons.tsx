@@ -144,7 +144,7 @@ export default function Reasons() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8 }}
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-5"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-5 md:gap-6"
         >
           {loveReasons.map((item) => (
             <motion.div
@@ -154,7 +154,7 @@ export default function Reasons() {
               viewport={{ once: true }}
               transition={{
                 duration: 0.5,
-                delay: (item.id % 5) * 0.08,
+                delay: (item.id % 6) * 0.06,
               }}
             >
               <ReasonCard id={item.id} reason={item.reason} />

@@ -2,21 +2,23 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Plane, Compass, HeartHandshake, Home, GraduationCap, Sparkles, Heart } from "lucide-react";
+import { Plane, Rocket, Gem, Home, Compass, Sparkles, Heart } from "lucide-react";
 import { futureDreams } from "@/config";
 
 const getIconComponent = (iconName: string) => {
   switch (iconName) {
+    case "Rocket":
+      return <Rocket className="w-8 h-8 text-rose-400 group-hover:scale-110 group-hover:text-rose-300 transition-all duration-300" />;
+    case "Gem":
+      return <Gem className="w-8 h-8 text-rose-400 group-hover:scale-110 group-hover:text-rose-300 transition-all duration-300" />;
     case "Plane":
       return <Plane className="w-8 h-8 text-rose-400 group-hover:scale-110 group-hover:text-rose-300 transition-all duration-300" />;
-    case "Compass":
-      return <Compass className="w-8 h-8 text-rose-400 group-hover:scale-110 group-hover:text-rose-300 transition-all duration-300" />;
-    case "HeartHandshake":
-      return <HeartHandshake className="w-8 h-8 text-rose-400 group-hover:scale-110 group-hover:text-rose-300 transition-all duration-300" />;
     case "Home":
       return <Home className="w-8 h-8 text-rose-400 group-hover:scale-110 group-hover:text-rose-300 transition-all duration-300" />;
-    case "GraduationCap":
-      return <GraduationCap className="w-8 h-8 text-rose-400 group-hover:scale-110 group-hover:text-rose-300 transition-all duration-300" />;
+    case "Heart":
+      return <Heart className="w-8 h-8 text-rose-400 fill-rose-500/20 group-hover:scale-110 group-hover:text-rose-300 transition-all duration-300" />;
+    case "Compass":
+      return <Compass className="w-8 h-8 text-rose-400 group-hover:scale-110 group-hover:text-rose-300 transition-all duration-300" />;
     default:
       return <Sparkles className="w-8 h-8 text-rose-400" />;
   }
@@ -28,11 +30,12 @@ const getStableRandom = (index: number, seed: number) => {
 };
 
 const categoryColors: Record<string, string> = {
-  Travel: "from-rose-500/15 to-pink-500/5",
-  Adventure: "from-purple-500/15 to-indigo-500/5",
-  Life: "from-amber-500/15 to-orange-500/5",
+  Career: "from-violet-500/15 to-indigo-500/5",
+  Marriage: "from-rose-500/15 to-pink-500/5",
   Home: "from-emerald-500/10 to-teal-500/5",
-  Learning: "from-violet-500/15 to-purple-500/5",
+  Travel: "from-amber-500/15 to-orange-500/5",
+  Family: "from-purple-500/15 to-rose-500/5",
+  Adventure: "from-cyan-500/15 to-blue-500/5",
 };
 
 function DreamCard({ dream, idx }: { dream: any; idx: number }) {
@@ -160,7 +163,7 @@ export default function Dreams() {
               Our Future Dreams
             </h2>
             <p className="text-zinc-500 text-xs md:text-sm tracking-widest uppercase font-light max-w-md mx-auto mt-2">
-              A collection of moments, adventures, and milestones we will achieve side by side
+              6 goals we will achieve together, hand in hand, step by step
             </p>
           </motion.div>
         </div>

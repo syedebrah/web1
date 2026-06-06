@@ -1,6 +1,7 @@
 import ClientOnlyBackground from "@/components/ClientOnlyBackground";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import AnniversaryWishes from "@/components/AnniversaryWishes";
 import LoveMeter from "@/components/LoveMeter";
 import Reasons from "@/components/Reasons";
 import Dreams from "@/components/Dreams";
@@ -11,6 +12,7 @@ import LetterToFuture from "@/components/LetterToFuture";
 import ForgiveSyed from "@/components/ForgiveSyed";
 import FinalEnding from "@/components/FinalEnding";
 import EasterEggs from "@/components/EasterEggs";
+import MusicPlayer from "@/components/MusicPlayer";
 
 export default function Home() {
   return (
@@ -25,6 +27,11 @@ export default function Home() {
       <main className="w-full flex flex-col items-center">
         {/* Section 1: Hero Landing (h1 sits here for SEO structure) */}
         <Hero />
+
+        <div className="section-divider w-full max-w-4xl mx-auto" />
+
+        {/* Section: Advance Anniversary Wishes */}
+        <AnniversaryWishes />
 
         <div className="section-divider w-full max-w-4xl mx-auto" />
 
@@ -74,6 +81,9 @@ export default function Home() {
 
       {/* Section 9: Floating Easter Egg Controls & Listeners */}
       <EasterEggs />
+
+      {/* Background Music Player */}
+      <MusicPlayer />
     </div>
   );
 }

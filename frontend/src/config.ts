@@ -18,13 +18,13 @@ export interface FutureDream {
   icon: string; // Lucide icon name or emoji representation
 }
 
-export const girlfriendName = "Swathy";
+export const girlfriendName = "Baby Zi";
 export const petName = "Baby Zii";
 export const yourName = "Syed";
 
 // Relationship start date (YYYY-MM-DD)
 // This will feed into the memory counter
-export const relationshipStartDate = "2024-04-12T18:30:00";
+export const relationshipStartDate = "2022-06-07T00:00:00";
 
 export const secretPassword = "love"; // The password to unlock the Secret Message Vault
 
@@ -86,50 +86,93 @@ export const loveReasons: LoveReason[] = [
   { id: 10, reason: "Your touch has a magical way of easing all my worries and anxiety." },
   { id: 11, reason: "You accept me fully, including all my flaws and quirks." },
   { id: 12, reason: "You are my baby Zi..." },
-  { id: 13, reason: "Your passion and dedication to the things you love are beautiful." },
-  { id: 14, reason: "You make me believe in soulmates and happy endings." },
-  { id: 15, reason: "You are the very first person I want to share good news with." },
-  { id: 16, reason: "The silly faces you make when you are trying to tease me." },
-  { id: 17, reason: "You make me feel safe, protected, and deeply cherished." },
-  { id: 18, reason: "Your gentle heart and the soft way you speak when I'm down." },
-  { id: 19, reason: "You are my best friend, my partner in crime, and my soulmate." },
-  { id: 20, reason: "Simply because you are you, and there is no one else like you in this universe." }
+  { id: 13, reason: "Your voice is the only lullaby I ever need to fall asleep to." },
+  { id: 14, reason: "The way you get jealous is the cutest thing in the world." },
+  { id: 15, reason: "Your smile literally stops my heart every single time." },
+  { id: 16, reason: "You make me want to be a better man for you, every day." },
+  { id: 17, reason: "Late night calls with you are my favorite part of the day." },
+  { id: 18, reason: "The way you say my name makes everything feel okay." },
+  { id: 19, reason: "You are the first person I think about when I wake up." },
+  { id: 20, reason: "Your hugs feel like home — the safest place in the world." },
+  { id: 21, reason: "You understand my silence better than anyone understands my words." },
+  { id: 22, reason: "I love the way you fight with me and then come back to me." },
+  { id: 23, reason: "You are the reason I believe in love at all." },
+  { id: 24, reason: "Your laugh is the most beautiful sound I have ever heard." },
+  { id: 25, reason: "You make even the boring moments feel magical." },
+  { id: 26, reason: "The way you care for me when I'm sick or down melts my heart." },
+  { id: 27, reason: "You are my best friend, my lover, and my entire world." },
+  { id: 28, reason: "I love how you steal my hoodies and look better in them than me." },
+  { id: 29, reason: "Every love song suddenly makes sense because of you." },
+  { id: 30, reason: "Simply because you are you, and there is no one else like you in this universe." },
+];
+
+export interface AnniversaryWish {
+  id: number;
+  quote: string;
+  translation: string;
+}
+
+export const anniversaryDate = "June 7, 2026";
+export const anniversaryYear = 4; // completing 4 years, entering 5th
+
+export const anniversaryWishes: AnniversaryWish[] = [
+  {
+    id: 1,
+    quote: "என் கனவுகளில் நீ, என் நினைவுகளில் நீ, என் சுவாசத்திலும் நீ.",
+    translation: "You are in my dreams, you are in my memories, you are in my every breath.",
+  },
+  {
+    id: 2,
+    quote: "உன் புன்னகை என் வாழ்வின் வெளிச்சம்.",
+    translation: "Your smile is the light of my life.",
+  },
+  {
+    id: 3,
+    quote: "முன்னிரவில் உன் பேச்சுசத்தமும், பின்னிரவில் உன் மூச்சுசத்தமும் வேண்டும்..!",
+    translation: "I need your voice in the evening and the sound of your breath at night..!",
+  },
 ];
 
 export const futureDreams: FutureDream[] = [
   {
-    title: "Places We Will Visit",
-    description: "Strolling through the streets of Paris, watching the Northern Lights in Iceland, and getting lost in Kyoto's cherry blossoms.",
-    category: "Travel",
-    icon: "Plane",
+    title: "Build Our Careers Together",
+    description: "Supporting each other's ambitions, celebrating every promotion, and growing side by side until we both reach the top of our dreams.",
+    category: "Career",
+    icon: "Rocket",
   },
   {
-    title: "Future Adventures",
-    description: "Hot air ballooning at sunrise, road tripping with no destination, and diving into the crystal clear ocean together.",
-    category: "Adventure",
-    icon: "Compass",
+    title: "Get Married & Start Our Life",
+    description: "Walking down the aisle together, making it official in front of everyone we love, and beginning the forever chapter of our story.",
+    category: "Marriage",
+    icon: "Gem",
   },
   {
-    title: "Goals Together",
-    description: "Building a life where we wake up next to each other every day, supporting each other's careers, and celebrating every small win.",
-    category: "Life",
-    icon: "HeartHandshake",
-  },
-  {
-    title: "Dream House",
-    description: "A cozy home with a massive bookshelf, a warm fireplace, a garden full of roses, and a big window overlooking a beautiful view.",
+    title: "Buy Our Own Home",
+    description: "A cozy place that's truly ours — with a kitchen we cook in together, a bedroom full of our memories, and a balcony for our late night talks.",
     category: "Home",
     icon: "Home",
   },
   {
-    title: "Things To Learn Together",
-    description: "Taking cooking classes, learning a new language, trying salsa dancing, and understanding how to build a lifetime of happiness.",
-    category: "Learning",
-    icon: "GraduationCap",
+    title: "Travel The World Together",
+    description: "Exploring Maldives, walking through the streets of Dubai, watching sunsets in Goa, and collecting passport stamps side by side.",
+    category: "Travel",
+    icon: "Plane",
+  },
+  {
+    title: "Grow Old Together",
+    description: "Building a beautiful family, raising our kids with love, and sitting together at 80 still holding hands and telling our grandkids how we fell in love.",
+    category: "Family",
+    icon: "Heart",
+  },
+  {
+    title: "Wild Adventures Together",
+    description: "Road trips with no map, midnight drives blasting our favorite songs, bungee jumping, camping under the stars, trying all 64 positions together, and making crazy memories we'll laugh about forever.",
+    category: "Adventure",
+    icon: "Compass",
   },
 ];
 
-export const futureLetter = `My Dearest Swathy,
+export const futureLetter = `My Dearest Baby Zi,
 
 I built this entire digital universe just for you because words sometimes fail me, but my effort and love for you never will. I know I messed up, and I am so, so sorry for hurting you. You mean absolutely everything to me, and seeing you upset is the hardest thing in the world.
 
@@ -146,4 +189,4 @@ If you are reading this, it means you successfully unlocked the vault. I wanted 
 
 Every day I spend with you is a gift. I know I can be a fool sometimes, and I'm truly sorry for my mistakes. But my love for you is constant, unwavering, and deeper than the deepest ocean. 
 
-You make my life beautiful, Swathy. Please forgive me. Thank you for simply being you. ❤️`;
+You make my life beautiful, Baby Zi. Please forgive me. Thank you for simply being you. ❤️`;
